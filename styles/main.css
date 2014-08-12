@@ -74,11 +74,11 @@ section:nth-child(2) .vid {
   z-index: 1; }
 
 .vid.gifs {
-  background-image: url(/images/firsttalk.gif);
+  background-image: url('../images/firsttalk.gif');
   box-shadow: inset 2px 15px 15px #333; }
 
 .vid.rs {
-  background-image: url(/images/runningstartimg.jpg);
+  background-image: url('../images/runningstartimg.jpg');
   box-shadow: inset 2px 10px 15px #333; }
 
 .vid.gifs:hover:before {
@@ -287,7 +287,7 @@ section {
   width: 50%;
   float: right;
   height: 100%;
-  background: url(/images/codingshot2.jpg);
+  background: url('../images/codingshot2.jpg');
   background-size: 110% 109%;
   background-position: center; }
 
