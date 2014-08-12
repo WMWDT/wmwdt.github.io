@@ -306,6 +306,20 @@ section {
   .third h1 {
     width: 70%; }
 
+
+.location a{
+	display: block;
+margin-top: -25px;
+color:white;
+}
+
+.location a:hover{
+
+	color:#555;
+
+}
+
+
 /*INTRO NAME ANIMATION*/
 .intro_title div {
   float: left;
