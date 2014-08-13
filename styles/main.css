@@ -491,26 +491,6 @@ top: 0;
  }   
 
 
- /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px; }
-
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0; }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px; }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0; } }
-
 
 
 @media screen and (max-width:600px) and (orientation: portrait) {
@@ -778,31 +758,21 @@ section h1{
 
 }
 
-svg .circle{
-  stroke-width:2;
-  stroke:#aaa;
-  
-}
-
-svg .line{
-   stroke:#fff;
-   stroke-width:5;
-}
 
 .social_icons {
 display:none; }
 
 
 .third {
-   box-sizing: border-box; 
-  width: 100%;
-  min-height: 380px;
-  float: left;
-  padding: 15px;
-  border-right: 1px inset rgba(221, 221, 221, 0.5);
-  position: relative;
-  margin-bottom: 0px;
-  color:white;
+ box-sizing: border-box;
+width: 100%;
+min-height: 475px;
+float: left;
+padding: 15px;
+border-right: 1px inset rgba(221, 221, 221, 0.5);
+position: relative;
+margin-bottom: 0px;
+color: white;
 }
 
 
@@ -821,7 +791,7 @@ position:relative;
 display:block;
 width: 100%;
 margin-left: 0;
-font-size: 1em;
+font-size: 1.25em;
 float:left;
 color:white;
 left:0;
@@ -829,8 +799,9 @@ margin-bottom:10px;
 }
 
 div.desc_topic p:first-child{
-  font-size:1.75em;
-
+ font-size: 1.75em;
+margin-top: 0px;
+margin-bottom: 15px;
 }
 
   
@@ -852,16 +823,12 @@ display:none;
 
 
 .gotoslides {
-  position:absolute;
-  width: 50%;
-  margin-left:25%;
-  text-align: center;
-  bottom:0px;
- 
-  
-  
-  }
- 
+position: absolute;
+width: 150px;
+text-align: center;
+bottom: 0px;
+right: 0px;
+}
  
  
   
@@ -896,6 +863,59 @@ display:none;
 
 
 
+@media (max-width: 600px){
+
+.circle {
+      fill-opacity: .7;
+      fill: white;
+
+    }
+
+
+svg .circle{
+  stroke-width:2;
+  stroke:#aaa;
+  
+}
+
+svg .line{
+   stroke:#aaa;
+   stroke-width:5;
+}
+
+
+
+  .date{
+    margin-top:25px;
+  }
+
+.right_half > h1:first-child{
+  display:none;
+}
+
+.right_half h2{
+  background: white;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: -5px;
+  border-radius: 5px;
+  color: #415c71;
+  text-shadow: 2px 1px 1px #bdbdbd; }
+
+
+.location a{
+ 
+margin-top: -25px;
+color: white;
+background: #aaa;
+padding: 5px;
+font-size: 1.25em;
+border-radius: 5px;
+box-shadow: -1px 1px 1px 0px #bbb;
+
+}
+    
+}
 
 
 
