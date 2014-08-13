@@ -28,7 +28,7 @@ body {
   font-family: 'Open Sans Condensed', sans-serif; }
 
 
-@media (min-width:600px){
+@media (min-width:601px){
 
 
 section {
@@ -40,7 +40,7 @@ section {
   section:first-child {
   text-align: center;
   color: #ddd;
-  background: url('../images/mouseondesk.jpg');
+  background: url('../images/mouseondeskmobile.jpg');
   background-size: cover;
   background-position: center; }
 
@@ -717,7 +717,7 @@ section h1{
   section:first-child {
   text-align: center;
   color: #ddd;
-  background: url('../images/mouseondesk.jpg');
+  background: url('../images/mouseondeskmobile.jpg');
   background-size: cover;
   background-position: center; }
   
