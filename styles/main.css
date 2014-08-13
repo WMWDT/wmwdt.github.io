@@ -11,10 +11,15 @@ h1 {
   font-size: 3em; }
 
 /* Space out content a bit */
+html{
+	width:100%;
+	height: 100%;
+}
 body {
   padding: 0px;
   margin: 0px;
   height: 100%;
+  width:100%;
   position: relative;
   font-family: 'Open Sans Condensed', sans-serif; }
 
@@ -30,10 +35,7 @@ section {
  	background: url('../images/mouseondesk.jpg');
   background-size: cover;
   background-position: center; }
-  section:first-child svg {
-    position: absolute;
-    bottom: 5%;
-    margin-left: -61px; }
+
   section:first-child svg:hover {
     cursor: pointer; }
     section:first-child svg:hover .circle {
@@ -41,6 +43,12 @@ section {
       fill: white; }
     section:first-child svg:hover .line {
       stroke: #222; }
+
+
+.right_half{
+	position:relative;
+}
+
 
 .right_half h1 {
   background: white;
@@ -56,6 +64,8 @@ section {
   text-shadow: 1px 1px 1px;
   margin: 5px; }
 
+
+
 section.nextDate {
   background: #00C7AB; }
 
@@ -65,10 +75,10 @@ section:nth-child(2) {
 section:nth-child(2) .vid {
   float: right;
   height: 100px;
-  width: 100px;
+  width: 100px; 
   border-radius: 50%;
   position: absolute;
-  top: 4%;
+  top: 3%;
   left: 71%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -137,6 +147,7 @@ div.desc_topic p:first-child {
     text-decoration: none;
     border: 2px solid white;
     border-radius: 1px;
+    font-size:22px;
     padding: 5px 15px;
     -webkit-transition: background 200ms ease;
     transition: background 200ms ease; }
@@ -191,10 +202,14 @@ section:nth-child(4) {
   color: white;
   text-decoration: none;
   margin-right: 10px;
-  margin-left: 10px; }
+  margin-left: 10px; 
+  -webkit-transition:background 100ms linear;
+  -moz-transition:background 100ms linear;
+  transition:background 100ms linear;
+}
 
 .social_icons a:hover {
-  color: #F7CD1F; }
+  color: #c0392b; }
 
 a.meetup {
   height: 3.5em;
@@ -218,7 +233,7 @@ a.meetup:after {
   width: 101%; }
 
 a.meetup:hover {
-  background: #F7CD1F; }
+  background: #c0392b; }
 
 /* Custom page footer */
 .footer {
@@ -226,27 +241,9 @@ a.meetup:hover {
   color: #777;
   border-top: 1px solid #e5e5e5; }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px; }
 
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0; }
-
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 30px; }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0; } }
 section {
-  position: fixed;
+  position: absolute;
   -webkit-transition: all 500ms linear;
   transition: all 500ms linear;
   width: 90%;
@@ -257,15 +254,15 @@ section {
   -ms-transform: translatey(5%) translatex(5%);
   transform: translatey(5%) translatex(5%); }
 
-.remove {
-  -webkit-transform: translatey(-110%) translatex(5%);
-  -ms-transform: translatey(-110%) translatex(5%);
-  transform: translatey(-110%) translatex(5%); }
 
-.below {
-  -webkit-transform: translatey(220%) translatex(5%);
-  -ms-transform: translatey(220%) translatex(5%);
-  transform: translatey(220%) translatex(5%); }
+
+.nextDate {
+  -webkit-transform: translatey(115%) translatex(5%);
+  -ms-transform: translatey(115%) translatex(5%);
+  transform: translatey(115%) translatex(5%); 
+ margin-bottom:30px;
+
+}
 
 .left_half {
   position: relative;
@@ -275,7 +272,7 @@ section {
   .left_half .titles {
     height: 200px;
     position: absolute;
-    top: 10%;
+    top: 5%;
     font-family: "Source Code Pro";
     width: 100%;
     text-shadow: 1px 1px 0px rgba(224, 222, 222, 0.86); }
@@ -295,6 +292,14 @@ section {
   height: 100%;
  }
 
+ .right_half svg {
+    position: absolute;
+    bottom: 5%;
+    left:50%;
+    margin-left: -61px; 
+
+}
+
 .third {
   width: 33%;
   height: 100%;
@@ -311,13 +316,26 @@ section {
     width: 70%; }
 
 .date{
-	font-size: 30px;
-font-weight: 900;
+
 line-height: 11px;
 color: #415c71;
-margin-top: -45px;
 
 }
+
+
+.date h2,
+.date h1{
+background:none;
+color: #415c71;
+background-color:none;
+}
+
+
+.date h2{
+	text-decoration:underline;
+}
+
+
 .location a{
 	display: block;
 margin-top: -25px;
@@ -328,6 +346,15 @@ color:white;
 
 	color:#555;
 
+}
+
+.some_nav{
+text-align: right;
+}
+
+.some_nav a{
+	color:#415c71;
+	padding:0 10px;
 }
 
 
@@ -398,3 +425,77 @@ color:white;
   to {
     opacity: 0;
     position: aboslute; } }
+
+
+
+ @media (max-width: 1027px){
+
+section.nextDate{
+	background: none;
+}
+
+.third {
+  width: 100%;
+  height: 380px;
+  float: left;
+  padding: 15px;
+  border-right: 1px inset rgba(221, 221, 221, 0.5);
+  position: relative;
+  box-sizing: border-box; 
+  margin-bottom: 10px;
+}
+
+.third:first-child,
+.third:last-child{
+ background: #F06050;
+width:100%;
+}
+.third:nth-child(2){
+background: #00C7AB;
+
+}
+.gotoslides{
+	width:40%;
+	bottom:30px;
+}
+  .desc_time{
+  	width:40%;
+  }
+ 
+ section:nth-child(2) .vid{
+left:30% !important;
+ }
+
+div.desc_topic {
+width: 40%;
+margin-left: 10%;
+font-size: 1.15em;
+position: absolute;
+left: 45%;
+top: 0;
+}
+
+
+
+ }   
+
+
+ /* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px; }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0; }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px; }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0; } }
