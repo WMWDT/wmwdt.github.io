@@ -8,12 +8,16 @@
   padding: 0.2em 0; }
 
 h1 {
-  font-size: 3em; }
+  font-size: 3em; 
+  margin-top: 0;
+}
 
 /* Space out content a bit */
 html{
-	width:100%;
-	height: 100%;
+  width:100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 body {
   padding: 0px;
@@ -22,6 +26,10 @@ body {
   width:100%;
   position: relative;
   font-family: 'Open Sans Condensed', sans-serif; }
+
+
+@media (min-width:600px){
+
 
 section {
   display: block;
@@ -32,7 +40,7 @@ section {
   section:first-child {
   text-align: center;
   color: #ddd;
- 	background: url('../images/mouseondesk.jpg');
+  background: url('../images/mouseondesk.jpg');
   background-size: cover;
   background-position: center; }
 
@@ -46,7 +54,7 @@ section {
 
 
 .right_half{
-	position:relative;
+  position:relative;
 }
 
 
@@ -282,11 +290,11 @@ section {
       margin-bottom: 10px; }
 
 .left_half{
-	 background: rgba(65, 92, 113, 0.49);
+   background: rgba(65, 92, 113, 0.49);
 }
 
 .right_half {
-	 background:rgba(106, 117, 117, 0.49);
+   background:rgba(106, 117, 117, 0.49);
   width: 50%;
   float: right;
   height: 100%;
@@ -332,19 +340,19 @@ background-color:none;
 
 
 .date h2{
-	text-decoration:underline;
+  text-decoration:underline;
 }
 
 
 .location a{
-	display: block;
+  display: block;
 margin-top: -25px;
 color:white;
 }
 
 .location a:hover{
 
-	color:#555;
+  color:#555;
 
 }
 
@@ -353,8 +361,8 @@ text-align: right;
 }
 
 .some_nav a{
-	color:#415c71;
-	padding:0 10px;
+  color:#415c71;
+  padding:0 10px;
 }
 
 
@@ -428,10 +436,13 @@ text-align: right;
 
 
 
+}
+
+
  @media (max-width: 1027px){
 
 section.nextDate{
-	background: none;
+  background: none;
 }
 
 .third {
@@ -455,11 +466,11 @@ background: #00C7AB;
 
 }
 .gotoslides{
-	width:40%;
-	bottom:30px;
+  width:40%;
+  bottom:30px;
 }
   .desc_time{
-  	width:40%;
+    width:40%;
   }
  
  section:nth-child(2) .vid{
@@ -499,3 +510,193 @@ top: 0;
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0; } }
+
+
+
+@media screen and (max-width:600px){
+  
+  section {
+  display: block;
+  width: 100%;
+  height: 100%; 
+  
+  
+  }
+
+
+
+section h1{
+  margin-top:0px;
+  margin-bottom:15px;
+  font-size:2em;
+  color:white;
+}
+
+  section:first-child {
+  text-align: center;
+  color: #ddd;
+  background: url('../images/mouseondesk.jpg');
+  background-size: cover;
+  background-position: center; }
+  
+  
+
+  section:first-child svg:hover {
+    cursor: pointer; }
+    section:first-child svg:hover .circle {
+      fill-opacity: 1;
+      fill: white; }
+    section:first-child svg:hover .line {
+      stroke: #222; }
+  
+  
+  
+
+
+
+
+.left_half {
+  position: relative;
+  width: 100%;
+  float: left;
+  height: 50%; }
+  .left_half .titles {
+    height: 200px;
+    position: absolute;
+    top: 5%;
+    font-family: "Source Code Pro";
+    width: 100%;
+ }
+   
+   
+    .left_half .titles h1 {
+      font-size: 1.5em;
+      margin-top: 0px;
+      margin-bottom: 5px;
+  
+    
+    }
+
+.left_half{
+   background: rgba(65, 92, 113, 0.49);
+}
+
+.right_half {
+   background:rgba(106, 117, 117, 0.49);
+  width: 100%;
+  float: right;
+  height: 50%;
+ }
+
+ .right_half svg {
+    position: absolute;
+    bottom: 5%;
+    left:50%;
+    margin-left: -25px; 
+  height:50px;
+  width:50px;
+
+}
+
+
+.social_icons {
+display:none; }
+
+
+.third {
+   box-sizing: border-box; 
+  width: 100%;
+  height: 95%;
+  float: left;
+  padding: 15px;
+  border-right: 1px inset rgba(221, 221, 221, 0.5);
+  position: relative;
+  margin-bottom: 0px;
+  color:white;
+}
+
+
+
+
+  .desc_time{
+  position:relative;
+    width:100%;
+  float:left;
+  text-align:center;
+  }
+  
+  
+div.desc_topic {
+position:relative;
+display:block;
+width: 100%;
+margin-left: 0;
+font-size: 1em;
+float:left;
+color:white;
+left:0;
+margin-bottom:10px;
+}
+
+div.desc_topic p:first-child{
+  font-size:1.75em;
+
+}
+
+  
+  
+  .desc_time h1{
+   margin-bottom:0px;
+  }
+  
+    .desc_time h2{
+    margin-top:0px;
+    padding-bottom:5px;
+    border-bottom:1px solid #ddd;
+  }
+ 
+ section .vid{
+display:none;
+ }
+
+
+
+.gotoslides {
+  position:absolute;
+  width: 50%;
+  margin-left:25%;
+  text-align: center;
+  bottom:0px;
+ 
+  
+  
+  }
+ 
+ 
+ 
+  
+  
+  .gotoslides a {
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 1px;
+    font-size:22px;
+    padding: 5px 15px;
+   box-shadow: 0px 2px 1px 1px rgba(155,155,155,.5);
+   text-shadow:2px 1px 1px rgba(155,155,155,.5);
+    -webkit-transition: background 200ms ease;
+    transition: background 200ms ease; }
+  
+  
+  .gotoslides a:hover {
+    color: #00C7AB;
+    background: white; }
+
+
+
+
+
+
+
+}
