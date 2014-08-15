@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans+Condensed:300);
-@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:900);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:1000);
 @import url(http://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise);
 .browsehappy {
   margin: 0.2em 0;
@@ -31,13 +31,22 @@ body {
 @media (min-width:601px){
 
 
-section {
-  display: block;
-  position: fixed;
-  width: 90%;
-  height: 90%; }
 
-  section:first-child {
+section {
+  box-sizing:border-box;
+  padding:5%;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+   }
+
+
+  section.intro .padded_container{
+  position:relative;
+  width:100%;
+  height:100%;
+
   text-align: center;
   color: #ddd;
   background: url('../images/mouseondesk.jpg');
@@ -75,7 +84,7 @@ section {
 
 
 section.nextDate {
-  background: #00C7AB; }
+  }
 
 section:nth-child(2) {
   color: white; }
@@ -193,6 +202,11 @@ section:nth-child(4) {
   width: 60%;
   margin-left: 20%; }
 
+.third{
+  background: #00C7AB; 
+}
+
+
 .third:last-child {
   width: 34%;
   background: #F06050; }
@@ -250,25 +264,6 @@ a.meetup:hover {
   border-top: 1px solid #e5e5e5; }
 
 
-section {
-  position: absolute;
-  -webkit-transition: all 500ms linear;
-  transition: all 500ms linear;
-  width: 90%;
-  height: 90%; }
-
-.active {
-  -webkit-transform: translatey(5%) translatex(5%);
-  -ms-transform: translatey(5%) translatex(5%);
-  transform: translatey(5%) translatex(5%); }
-
-
-
-.nextDate {
-  -webkit-transform: translatey(115%) translatex(5%);
-  -ms-transform: translatey(115%) translatex(5%);
-  transform: translatey(115%) translatex(5%); 
- margin-bottom:30px;
 
 }
 
@@ -370,70 +365,6 @@ text-align: right;
 .intro_title div {
   float: left;
   font-family: 'Oswald', sans-serif; }
-
-@-webkit-keyframes wm {
-  0%,100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-
-  29% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-
-  50% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); }
-
-  80% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); } }
-@keyframes wm {
-  0%,100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-
-  29% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-
-  50% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); }
-
-  80% {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); } }
-.rotatingm {
-  -webkit-animation: wm 8s linear forwards;
-  animation: wm 8s linear forwards; }
-
-@-webkit-keyframes show {
-  from {
-    opacity: 0; }
-
-  to {
-    opacity: 1; } }
-@keyframes show {
-  from {
-    opacity: 0; }
-
-  to {
-    opacity: 1; } }
-@-webkit-keyframes hide {
-  from {
-    opacity: 1; }
-
-  to {
-    opacity: 0;
-    position: aboslute; } }
-@keyframes hide {
-  from {
-    opacity: 1; }
-
-  to {
-    opacity: 0;
-    position: aboslute; } }
-
 
 
 }
