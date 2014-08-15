@@ -12,6 +12,9 @@ h1 {
   margin-top: 0;
 }
 
+*{
+  box-sizing:border-box;
+}
 /* Space out content a bit */
 html{
   width:100%;
@@ -52,6 +55,57 @@ section {
   background: url('../images/mouseondesk.jpg');
   background-size: cover;
   background-position: center; }
+
+.meetup1{
+  background: url('../images/typewriter2.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+
+
+ .slide_holder{
+  width: 50%;
+height: 100%;
+float: left;
+position: relative;
+background: rgba(184, 184, 184, 0.64);
+}
+
+
+.slide_holder iframe{
+  position: absolute;
+left: 50%;
+margin-left: -268px;
+top:50px;
+}
+
+.slide_holder.video iframe{
+  top:96px;
+}
+
+.slide_info{
+  width:500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+  top:500px;
+  text-align: center;
+}
+.slide_info h1{
+  margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a.home .fa-home{
+position: fixed;
+color:white;
+left:20px;
+top:20px;
+z-index: 1;
+}
+
 
   section:first-child svg:hover {
     cursor: pointer; }
@@ -359,6 +413,7 @@ text-align: right;
 }
 
 
+
  @media (max-width: 1027px){
 
 section.nextDate{
@@ -405,6 +460,9 @@ position: absolute;
 left: 45%;
 top: 0;
 }
+
+
+
 
 
 
