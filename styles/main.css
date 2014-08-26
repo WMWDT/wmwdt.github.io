@@ -27,6 +27,49 @@ body {
   position: relative;
   font-family: 'Open Sans Condensed', sans-serif; }
 
+.third:first-child,
+.third:last-child{
+ background: #F06050;
+
+}
+.third:nth-child(2){
+background: #00C7AB;
+
+}
+
+.left_half,.right_half{
+  position: relative;
+}
+
+
+.date {
+line-height: 23px;
+color: #415c71;
+height: 78px;
+width: 200px;
+padding-top: 5px;
+background: rgba(230, 228, 228, 0.33);
+position: absolute;
+top: 50%;
+left: 50%;
+margin-left: -100px;
+margin-top: -39px;
+}
+
+
+
+.right_half > h1 {
+  background: white;
+  padding: 5px 20px;
+  display: inline-block;
+  margin-top: 25px;
+  border-radius: 5px;
+  color: #415c71;
+  text-shadow: 2px 1px 1px #bdbdbd; }
+
+
+
+
 
 @media (min-width:601px){
 
@@ -67,7 +110,7 @@ section {
 }
 
 
-.right_half h1 {
+.right_half > h1 {
   background: white;
   padding: 5px 20px;
   display: inline-block;
@@ -81,6 +124,13 @@ section {
   text-shadow: 1px 1px 1px;
   margin: 5px; }
 
+.date{
+  height: 100px;
+width: 300px;
+padding-top: 15px;
+margin-left: -150px;
+margin-top: -50px;
+}
 
 
 section.nextDate .vid {
@@ -89,8 +139,8 @@ section.nextDate .vid {
   width: 100px; 
   border-radius: 50%;
   position: absolute;
-  top: 3%;
-  left: 71%;
+  top: 20px;
+  right: 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 55%;
@@ -166,14 +216,6 @@ div.desc_topic p:first-child {
     color: #00C7AB;
     background: white; }
 
-
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-  padding-left: 15px;
-  padding-right: 15px; }
 
 /* Custom page header */
 .header {
@@ -309,7 +351,7 @@ a.meetup:hover {
 
 .date{
 
-line-height: 11px;
+
 color: #415c71;
 
 }
@@ -413,7 +455,7 @@ top: 0;
 
 
 
-@media screen and (max-width:600px) and (orientation: portrait) {
+@media screen and (max-width:850px)  {
   
   section {
   display: block;
@@ -422,7 +464,9 @@ top: 0;
   
   
   }
-
+.padded_container{
+  height:100%;
+}
 
 
 section h1{
@@ -460,17 +504,21 @@ section h1{
   width: 100%;
   float: left;
   height: 50%; }
+
+
+
   .left_half .titles {
-    height: 200px;
-    position: absolute;
-    top: 5%;
-    font-family: "Source Code Pro";
-    width: 100%;
+   height: 200px;
+position: absolute;
+top: 50%;
+margin-top: -100px;
+font-family: "Source Code Pro";
+width: 100%;
  }
    
    
     .left_half .titles h1 {
-      font-size: 1.5em;
+      font-size: 2.5rem;
       margin-top: 0px;
       margin-bottom: 5px;
   
@@ -504,17 +552,21 @@ display:none; }
 
 
 .third {
-   box-sizing: border-box; 
-  width: 100%;
-  height: 95%;
-  float: left;
-  padding: 15px;
-  border-right: 1px inset rgba(221, 221, 221, 0.5);
-  position: relative;
-  margin-bottom: 0px;
-  color:white;
+box-sizing: border-box;
+width: 100%;
+height: auto;
+min-height: 510px;
+float: left;
+padding: 15px;
+border-right: 1px inset rgba(221, 221, 221, 0.5);
+position: relative;
+margin-bottom: 10px;
+color: white;
 }
 
+.third:last-child{
+  width:100%;
+}
 
 
 
@@ -547,6 +599,7 @@ div.desc_topic p:first-child{
   
   .desc_time h1{
    margin-bottom:0px;
+   width:100%;
   }
   
     .desc_time h2{
@@ -604,7 +657,9 @@ display:none;
   
   
   }
-
+.padded_container{
+  height: 100%;
+}
 
 
 section h1{
@@ -778,66 +833,14 @@ right: 0px;
 
 }
 
-
-
-
-
-
-@media (max-width: 600px){
-
-.circle {
-      fill-opacity: .7;
-      fill: white;
-
-    }
-
-
-svg .circle{
-  stroke-width:2;
-  stroke:#aaa;
-  
+@media screen and (max-width:480px){
+.left_half .titles h1 {
+font-size: 1.5rem;
+margin-top: 0px;
+margin-bottom: 5px;
 }
 
-svg .line{
-   stroke:#aaa;
-   stroke-width:5;
 }
-
-
-
-  .date{
-    margin-top:25px;
-  }
-
-.right_half > h1:first-child{
-  display:none;
-}
-
-.right_half h2{
-  background: white;
-  padding: 5px 20px;
-  display: inline-block;
-  margin-top: -5px;
-  border-radius: 5px;
-  color: #415c71;
-  text-shadow: 2px 1px 1px #bdbdbd; }
-
-
-.location a{
- 
-margin-top: -25px;
-color: white;
-background: #aaa;
-padding: 5px;
-font-size: 1.25em;
-border-radius: 5px;
-box-shadow: -1px 1px 1px 0px #bbb;
-
-}
-    
-}
-
-
 
 
 
